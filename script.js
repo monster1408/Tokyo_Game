@@ -1,4 +1,4 @@
-document.getElementById("titile").style.display = 'block';
+document.getElementById("title").style.display = 'block';
 function gameStart(){
-  document.getElementById("titile").style.display = 'none';
+  document.getElementById("title").style.display = 'none';
 }
