@@ -3,6 +3,6 @@ console.log(document.getElementById("gameSpace"));
 document.getElementById("title").style.display = 'block';
 function gameStart(){
   document.getElementById("title").style.display = 'none';
-  gamespace.innerText = "<p message>a</p>";
+  gamespace.innerHTML = "<p message>a</p>";
 
 }
