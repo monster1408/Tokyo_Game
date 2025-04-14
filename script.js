@@ -1,7 +1,8 @@
+gamespace = document.getElementById("gameSpace")
+console.log(document.getElementById("gameSpace"));
 document.getElementById("title").style.display = 'block';
 function gameStart(){
   document.getElementById("title").style.display = 'none';
+  gamespace.innerText = "<p message>a</p>";
+
 }
-gamespace = document.getElementById("gameSpace")
-console.log(document.getElementById("gameSpace"));
-gamespace.innerText = "<p message>a</p>";
