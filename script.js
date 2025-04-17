@@ -9,6 +9,11 @@ function gameStart(){
   gamespace.innerHTML = '<p id="message">こんにちは</p>';
 }
 function messagefunction() {
-  message.innerText = messagelist[messagenum];
-  messagenum = 0;
+  const message = document.getElementById("message"); // 毎回取得
+  if (messagenum < messagelist.length) {
+    message.innerText = messagelist[messagenum];
+    messagenum++;
+  } else {
+    message.innerText = "選択肢は以上です。";
+  }
 }
