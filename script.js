@@ -9,6 +9,6 @@ function gameStart(){
   gamespace.innerHTML = '<p id="message">こんにちは</p>';
 }
 function messagefunction() {
-  message.innerText=messagelist[messagenum];
+  message.innerText = messagelist[messagenum];
   messagenum = 0;
 }
