@@ -6,7 +6,7 @@ document.getElementById("title").style.display = 'block';
 messagelist = ["あなたはどこにしますか?","千代田区?品川区?"]
 function gameStart(){
   document.getElementById("title").style.display = 'none';
-  gamespace.innerHTML = '<p id="message">こんにちは</p>';
+  gamespace.innerHTML = '<p id="message">こんにちは</p><a id=nextmessage onclick="messagefunction">';
 }
 function messagefunction() {
   const message = document.getElementById("message"); // 毎回取得
