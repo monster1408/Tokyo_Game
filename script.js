@@ -27,7 +27,7 @@ const tokyoWards = [
 messagenum = 0;
 gamespace = document.getElementById("gameSpace");
 message = document.getElementById("message");
-console.log(document.getElementById("gameSpace"));
+console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
