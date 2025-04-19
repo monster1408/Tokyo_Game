@@ -25,7 +25,7 @@ const tokyoWards = [
 ];
 
 messagenum = 0;
-gamespace = document.getElementById("gameSpace");
+gamespace = document.getElementById("gameMessage");
 message = document.getElementById("message");
 console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
