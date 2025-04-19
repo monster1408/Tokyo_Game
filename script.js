@@ -34,10 +34,10 @@ messagelist = ["こちらはエリアの選択画面となっております。"
 "焦らず、しかし迅速にお決めいただくことを推奨いたします。"]
 function gameStart(){
   document.getElementById("title").style.display = 'none';
-  gamespace.innerHTML = '<p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a>';
+  gamespace.innerHTML = '<p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a><div class="box"><p>こんにちは、これはメッセージだよ！</p><button class="btn">クリックしてね</button></div>';
 }
 function messagefunction() {
-  const message = document.getElementById("message"); // 毎回取得
+  const message = document.getElementById("message");
   if (messagenum < messagelist.length) {
     message.innerText = messagelist[messagenum];
     messagenum++;
