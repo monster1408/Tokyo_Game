@@ -34,7 +34,7 @@ messagelist = ["こちらはエリアの選択画面となっております。"
 "焦らず、しかし迅速にお決めいただくことを推奨いたします。"]
 function gameStart(){
   document.getElementById("title").style.display = 'none';
-  gamespace.innerHTML = '<p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a><div class="box"><p>こんにちは、これはメッセージだよ！</p><button class="btn">クリックしてね</button></div>';
+  gamespace.innerHTML = '<div class="box"><p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a></div>';
 }
 function messagefunction() {
   const message = document.getElementById("message");
