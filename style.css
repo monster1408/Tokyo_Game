@@ -21,3 +21,8 @@
   top: -10px;
   left: 20px;
 }
+#nextmessage{
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
