@@ -34,7 +34,7 @@ messagelist = ["こちらはエリアの選択画面となっております。"
 "焦らず、しかし迅速にお決めいただくことを推奨いたします。"]
 let formlist = "";
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 23; i++) {
   const radio = `
     <label>
       <input type="radio" name="ward" value="${tokyoWards[i].name}">
