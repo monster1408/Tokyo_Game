@@ -32,6 +32,10 @@ document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
 "焦らず、しかし迅速にお決めいただくことを推奨いたします。"]
+for (let i = 0; i < 5; i++) {
+  form = '<form id="input23"><label><input type="radio" name="ward" value=tokyoWards[i].name>value=tokyoWards[i].name</label><br></form>';
+  formlist = formlist + form;
+}
 function gameStart(){
   document.getElementById("title").style.display = 'none';
   gamespace.innerHTML = '<div class="box"><p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a></div>';
