@@ -44,10 +44,10 @@ for (let i = 0; i < 23; i++) {
   formlist += radio;
 }
 
-document.getElementById("input23").innerHTML = formlist;
 function gameStart(){
   document.getElementById("title").style.display = 'none';
   gamespace.innerHTML = '<div class="box"><p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a></div>';
+  document.getElementById("input23").innerHTML = formlist;
 }
 function messagefunction() {
   const message = document.getElementById("message");
