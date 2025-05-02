@@ -31,7 +31,7 @@ console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
-"焦らず、しかし迅速にお決めいただくことを推奨いたします。"."決めたら次へを押してください"]
+"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください"]
 let formlist = "";
 
 for (let i = 0; i < 23; i++) {
@@ -55,6 +55,11 @@ function messagefunction() {
   if (messagenum < messagelist.length) {
     message.innerText = messagelist[messagenum];
     messagenum++;
+    if (messagenum == 5){
+      message.innerText = messagelist[messagenum];
+      messagenum++;
+      
+    }
   } else {
     message.innerText = "選択肢は以上です。";
   }
