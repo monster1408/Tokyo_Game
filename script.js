@@ -43,9 +43,10 @@ for (let i = 0; i < 23; i++) {
   `;
   formlist += radio;
 }
-
+document.getElementById("input23").style.display = 'none';
 function gameStart(){
   document.getElementById("title").style.display = 'none';
+  document.getElementById("input23").style.display = 'block';
   gamespace.innerHTML = '<div class="box"><p id="message">こんにちは。</p><a id=nextmessage onclick="messagefunction()">Next</a></div>';
   document.getElementById("input23").innerHTML = formlist;
 }
