@@ -58,7 +58,7 @@ function messagefunction() {
     if (messagenum == 5){
       message.innerText = messagelist[messagenum];
       messagenum++;
-      
+      PlayerSelect = document.getElementById("input23").value;
     }
   } else {
     message.innerText = "選択肢は以上です。";
