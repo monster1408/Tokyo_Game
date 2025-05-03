@@ -23,7 +23,7 @@ const tokyoWards = [
   { id: 21, name: "葛飾区", kana: "かつしかく", area: 34.80, population: 453379, description: "寅さんやこち亀の舞台。人情味のある街。" },
   { id: 22, name: "江戸川区", kana: "えどがわく", area: 49.90, population: 706652, description: "家族連れに人気。自然と住宅地が共存。" }
 ];
-
+PlayerSelect = "";
 messagenum = 0;
 gamespace = document.getElementById("gameMessage");
 message = document.getElementById("message");
@@ -31,7 +31,7 @@ console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
-"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください"]
+"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。${PlayerSelect}はいい場所ですよ!"]
 let formlist = "";
 
 for (let i = 0; i < 23; i++) {
