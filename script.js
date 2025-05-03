@@ -36,10 +36,9 @@ let formlist = "";
 
 for (let i = 0; i < 23; i++) {
   const radio = `
-    <label>
-      <option value="${tokyoWards[i].name}">
+    <option value="${tokyoWards[i].name}">
       ${tokyoWards[i].name}
-    </option></label><br>
+    </option>
   `;
   formlist += radio;
 }
