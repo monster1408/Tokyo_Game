@@ -23,6 +23,18 @@ const tokyoWards = [
   { id: 21, name: "葛飾区", kana: "かつしかく", area: 34.80, population: 453379, description: "寅さんやこち亀の舞台。人情味のある街。" },
   { id: 22, name: "江戸川区", kana: "えどがわく", area: 49.90, population: 706652, description: "家族連れに人気。自然と住宅地が共存。" }
 ];
+
+// 通知の許可を求める
+Notification.requestPermission().then(function(permission) {
+  if (permission === "granted") {
+    // 通知を表示
+    new Notification("こんにちは", {
+      body: "これはJavaScriptからの通知です！",
+      icon: "icon.png" // 任意のアイコン
+    });
+  }
+});
+
 PlayerSelect = "";
 messagenum = 0;
 gamespace = document.getElementById("gameMessage");
