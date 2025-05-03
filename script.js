@@ -54,9 +54,7 @@ function messagefunction() {
   if (messagenum < messagelist.length) {
     message.innerText = messagelist[messagenum];
     messagenum++;
-    if (messagenum == 5){
-      message.innerText = messagelist[messagenum];
-      messagenum++;
+    if (messagenum == 4){
       PlayerSelect = document.getElementById("input23").value;
     }
   } else {
