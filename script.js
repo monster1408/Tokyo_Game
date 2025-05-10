@@ -25,6 +25,7 @@ const tokyoWards = [
 ];
 
 PlayerSelect = "";
+
 messagenum = 0;
 gamespace = document.getElementById("gameMessage");
 message = document.getElementById("message");
