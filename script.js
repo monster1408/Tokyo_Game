@@ -24,6 +24,9 @@ const tokyoWards = [
   { id: 22, name: "江戸川区", kana: "えどがわく", area: 49.90, population: 706652, description: "家族連れに人気。自然と住宅地が共存。" }
 ];
 
+for (let i = 0; i < 23; i++){
+  name = ${tokyoWards[i].name}
+}
 PlayerSelect = "";
 
 messagenum = 0;
@@ -33,7 +36,7 @@ console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
-"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[i].population+"人です"]
+"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[name.indexOf();].population+"人です"]
 
 let formlist = "";
 
