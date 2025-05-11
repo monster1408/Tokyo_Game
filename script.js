@@ -34,7 +34,7 @@ document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
 "焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[i].population+"人です"]
-a = messagelist;
+
 let formlist = "";
 
 for (let i = 0; i < 23; i++) {
@@ -53,7 +53,9 @@ function gameStart(){
   document.getElementById("input23").innerHTML = formlist;
 }
 function messagefunction() {
-  messagelist = a;
+  messagelist = messagelist = ["こちらはエリアの選択画面となっております。",
+"あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
+"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[i].population+"人です"]
   const message = document.getElementById("message");
   if (messagenum < messagelist.length) {
     message.innerText = messagelist[messagenum];
