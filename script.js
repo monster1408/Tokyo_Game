@@ -23,11 +23,6 @@ const tokyoWards = [
   { id: 21, name: "葛飾区", kana: "かつしかく", area: 34.80, population: 453379, description: "寅さんやこち亀の舞台。人情味のある街。" },
   { id: 22, name: "江戸川区", kana: "えどがわく", area: 49.90, population: 706652, description: "家族連れに人気。自然と住宅地が共存。" }
 ];
-name = []
-for (let i = 0; i < 23; i++){
-  name = push(tokyoWards[i].name);
-}
-PlayerSelect = "";
 
 messagenum = 0;
 gamespace = document.getElementById("gameMessage");
@@ -36,15 +31,15 @@ console.log(document.getElementById("gameMessage"));
 document.getElementById("title").style.display = 'block';
 messagelist = ["こちらはエリアの選択画面となっております。",
 "あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
-"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[name.indexOf(PlayerSelect)].population+"人です"];
-
+"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたらnextを押してください"]
 let formlist = "";
 
 for (let i = 0; i < 23; i++) {
   const radio = `
-    <option value="${tokyoWards[i].name}">
+    <label>
+      <option value="${tokyoWards[i].name}">
       ${tokyoWards[i].name}
-    </option>
+    </option></label><br>
   `;
   formlist += radio;
 }
@@ -56,16 +51,14 @@ function gameStart(){
   document.getElementById("input23").innerHTML = formlist;
 }
 function messagefunction() {
-  messagelist = messagelist = ["こちらはエリアの選択画面となっております。",
-"あなたが選んだ区は今後の体験に多大な影響を及ぼす可能性を有しています。",
-"焦らず、しかし迅速にお決めいただくことを推奨いたします。","決めたら次へを押してください","いい選択です。"+PlayerSelect+"はいい場所ですよ!","人口は"+tokyoWards[i].population+"人です"];
   const message = document.getElementById("message");
   if (messagenum < messagelist.length) {
     message.innerText = messagelist[messagenum];
-    messagenum++;
-    if (messagenum == 4){
-      PlayerSelect = document.getElementById("input23").value;
+    if (messagenum == 3) {
+    	PlayerSelect = document.getElementById("input23").value;
+      messagelist.push(PlayerSelect + "ですね");
     }
+    messagenum++;
   } else {
     message.innerText = "選択肢は以上です。";
   }
